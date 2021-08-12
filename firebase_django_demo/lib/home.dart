@@ -28,7 +28,7 @@ class HomePage extends StatelessWidget {
         child: Column(
           children: [
             Text(
-              'Justin',
+              'Welcome ' + FirebaseAuth.instance.currentUser!.displayName!,
               style: TextStyle(fontSize: 25),
             ),
           ],
